@@ -1,0 +1,28 @@
+//Include the namespace
+using HTMLReportEngine;
+
+//Create report object and set properties.
+Report report = new Report();
+report.ReportTitle = "Issue Report";
+//Create a DataSet ds and fill it before using this code.
+report.ReportSource = ds;
+
+//Create Section
+Section release = new Section("Release","Release: ");
+
+//Create SubSection
+Section project = new Section("Project","ProjectID: ");
+
+//Add the sections to the report
+release.SubSection = project;
+report.Sections.Add(release);
+
+//Add report fields to the report object.
+report.ReportFields.Add(new Field("TicketNo", "Ticket", 50, ALIGN.RIGHT));
+report.ReportFields.Add(new Field("CreatedBy", "CreatedBy", 150));
+report.ReportFields.Add(new Field("AssignedTo", "AssignedTo"));
+report.ReportFields.Add(new Field("Release", "Release", 200));
+report.ReportFields.Add(new Field("Project", "Project", 150, ALIGN.RIGHT));
+
+//Generate and save the report
+report.SaveReport(@"C:\Data\Report.htm")
