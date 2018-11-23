@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'javac helloword.java'
+                sh 'javac helloworld.java'
             }
         }
         stage('Execute') { 
             steps {
-                sh 'java helloword' 
+                sh 'java helloworld' 
             }
           
         }
