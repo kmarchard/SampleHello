@@ -5,11 +5,13 @@ pipeline {
         stage('Compile') {
             steps {
                 sh 'javac helloworld.java'
+                sh 'javac Palindrome.java'
             }
         }
         stage('Execute') { 
             steps {
                 sh 'java helloworld' 
+                sh 'java Palindrome'
             }
           
         }
