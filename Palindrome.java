@@ -1,11 +1,9 @@
-
- 
 public class Palindrome
 {
    public static void main(String args[])
    {
-      String original, reverse = "MADAM"; // Objects of String class
-
+      String original= "MADAM"; // Objects of String class
+String reverse= "MADAM";
       if (original.equals(reverse))
          System.out.println("The string is a palindrome.");
       else
