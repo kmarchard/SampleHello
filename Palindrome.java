@@ -1,14 +1,11 @@
-import java.util.*;
+
  
 public class Palindrome
 {
    public static void main(String args[])
    {
-      String original, reverse = ""; // Objects of String class
-      Scanner in = new Scanner(System.in);
-     
-      System.out.println("Enter a string to check if it is a palindrome");
-      original = in.nextLine();
+      String original, reverse = "MADAM"; // Objects of String class
+      
      
       int length = original.length();
      
