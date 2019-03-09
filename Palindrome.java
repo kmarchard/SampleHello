@@ -9,9 +9,9 @@ public class Palindrome
       String original= "MADAM"; // Objects of String class
 String reverse= "MADAM";
       if (original.equals(reverse))
-         System.out.println("The string is a palindrome.");
+         System.out.println("The string and int is a palindrome.");
       else
-         System.out.println("The string isn't a palindrome.");
+         System.out.println("The string and int isn't a palindrome.");
          
    }
 }      
