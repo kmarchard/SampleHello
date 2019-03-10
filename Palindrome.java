@@ -7,7 +7,7 @@ public class Palindrome
       Scanner sc = new Scanner(System.in); 
       //int age = sc.nextInt();
       System.out.println("The age is"+  12);
-      String name=”quora”;
+      String name="quora";
 
 StringBuilder strb=new StringBuilder(name);
 
